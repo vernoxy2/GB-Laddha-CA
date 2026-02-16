@@ -1,7 +1,7 @@
 import React from "react";
 import Map from "./Components/Map";
 import Form from "./Components/Form";
-import Officesdir from "./Components/officesdir";
+import Officesdir from "./Components/Officesdir";
 import Header from "../../Components/Header";
 import ContactBg from "../../assets/ContactUsImg/ContactBg.png";
 
