@@ -34,7 +34,7 @@ const Footer = () => {
   return (
     <div
       style={{ backgroundImage: `url(${FooterBg})` }}
-      className="bg-cover py-20 rounded-t-3xl  text-white"
+      className="bg-cover py-20 rounded-t-3xl  text-white -mt-5"
     >
       <div className="container lg:flex justify-center items-center gap-8">
         {/* Left section */}

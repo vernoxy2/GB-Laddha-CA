@@ -1,10 +1,11 @@
 import React from "react";
+import Titleline from "../../../Components/Titleline";
 
 const officesdirectly = [
   {
     heading: "Head Office",
     city: "Vapi",
-    address: "G. B. Laddha & Co. LLP  1–2, Second Floor, Sahara Market,Silvassa Road, Vapi – 396191, Gujarat",
+    address: "G. B. Laddha & Co. LLP 1–2, Second Floor, Sahara Market,Silvassa Road, Vapi – 396191, Gujarat",
     phone: "+91 83477 44411",
     email: "audit@gbladdha.com",
     manager: "CA Giriraj Laddha:",
@@ -24,6 +25,7 @@ const OfficesDirect = () => {
   return (
     <section className="container ">
       <div className="mb-12 text-center max-w-3xl mx-auto">
+        <Titleline className="justify-center" Title={"contact us"}/>
         <h2 className="text-3xl font-bold">
           Get in touch with us through the form below or contact our{" "}
           <span className="text-gradient-primary">
