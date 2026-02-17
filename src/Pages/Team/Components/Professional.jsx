@@ -1,7 +1,7 @@
 import React from "react";
 import Titleline from "../../../Components/Titleline";
 import ProfessionalBg from "../../../assets/TeamImg/ProfessionalBg.svg";
-import Proson from "../../../assets/TeamImg/person.svg";
+import Proson from "../../../assets/TeamImg/Person.svg";
 import Slider from "react-slick";
 // Don't forget to import these CSS files
 import "slick-carousel/slick/slick.css";
