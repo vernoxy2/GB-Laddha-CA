@@ -1,5 +1,5 @@
 import React from "react";
-import Demoimg from "../../../assets/TeamImg/demoImg.svg";
+import Demoimg from "../../../assets/TeamImg/DemoImg.svg";
 
 const Leadership = () => {
   return (
