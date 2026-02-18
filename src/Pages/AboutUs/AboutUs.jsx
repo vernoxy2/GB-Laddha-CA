@@ -4,10 +4,10 @@ import Principles from "./Components/Principles";
 import Header from "../../Components/Header";
 import ContactBg from "../../assets/AboutUsImgs/AboutBg.png";
 
-
 const AboutUs = () => {
-  return <>
-  <Header
+  return (
+    <div className="pb-16">
+      <Header
         backgroundImage={ContactBg}
         title={"About"}
         color={"Us"}
@@ -15,9 +15,10 @@ const AboutUs = () => {
           "We go beyond numbers, partnering with businesses to build strong, compliant, and future-ready financial foundations."
         }
       />
-    <About/>
-    <Principles/>
-  </>;
+      <About />
+      <Principles />
+    </div>
+  );
 };
 
 export default AboutUs;

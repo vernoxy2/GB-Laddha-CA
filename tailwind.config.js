@@ -33,9 +33,14 @@ export default {
             borderColor: "white",
           },
         },
+        scroll: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
 
       animation: {
+        scroll: "scroll 70s linear infinite",
         typing:
           "typing 2s steps(20) infinite alternate, blink .7s infinite",
       },
