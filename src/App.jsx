@@ -7,6 +7,9 @@ import ConatactUs from "./Pages/Contact/ConatactUs.jsx";
 import Team from "./Pages/Team/Team.jsx";
 import Navbar from "./Components/Navbar.jsx";
 import Footer from "./Components/Footer.jsx";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
 
 const App = () => {
   return (

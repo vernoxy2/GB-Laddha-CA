@@ -14,7 +14,7 @@ const NavLinks = [
 const Navbar = () => {
   return (
     <div className="container -mb-36 py-6">
-      <div className="flex justify-between items-center border rounded-lg py-2 bg-white/5 backdrop-blur-sm px-5">
+      <div className="flex justify-between items-center border rounded-lg py-2 bg-white/20 backdrop-blur-lg px-5">
         <img src={NavLogo} alt="Logo" />
 
         <ul className="flex justify-center items-center space-x-8">
