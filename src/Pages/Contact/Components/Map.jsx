@@ -11,6 +11,7 @@ const Map = () => {
         referrerPolicy="no-referrer-when-downgrade"
         title="Google Map"
       ></iframe>
+      
     </div>
   );
 };
