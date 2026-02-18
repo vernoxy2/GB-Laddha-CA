@@ -4,7 +4,7 @@ import Header from "../../Components/Header";
 import TeamBg from "../../assets/TeamImg/TeamBg.png"
 import WeServe from "./Components/WeServe";
 import Resources from "./Components/Resources";
-import OurServices from "./Components/Ourservices";
+import OurServices from "./Components/OurServices";
 import AboutUs from "./Components/AboutUs";
 import Scroll from "./Components/Scroll";
 
