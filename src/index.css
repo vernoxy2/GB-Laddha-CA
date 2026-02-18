@@ -11,7 +11,7 @@
     @apply text-4xl font-bold font-plusJakartaSans;
   }
   p {
-    @apply text-xl font-dmSans text-[#666666];
+    @apply text-xl font-dmSans text-[#666666] leading-relaxed;
   }
 
   section {
@@ -36,6 +36,4 @@
   .bg-gradient-primary {
     @apply bg-gradient-to-r from-primaryStart to-primaryEnd;
   }
-
-  
 }
