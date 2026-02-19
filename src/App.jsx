@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
+import PrimaryServiceCard from "./Components/PrimaryServiceCard.jsx";
 
 // Lazy loaded pages
 const Home = lazy(() => import("./Pages/Home/Home.jsx"));
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="OurTeam" element={<Team />} />
         </Route>
       </Routes>
+          <PrimaryServiceCard />
     </Suspense>
   );
 };

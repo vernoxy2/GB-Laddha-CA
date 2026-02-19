@@ -36,9 +36,9 @@ const Resources = () => {
       className="bg-cover bg-center"
       style={{ backgroundImage: `url(${ResourcesBg})` }}
     >
-      <div className="container relative flex gap-12 items-center">
+      <div className="container relative lg:flex gap-12 items-center space-y-7">
         {/* Left Content */}
-        <div className="w-1/3 text-white">
+        <div className="lg:w-1/3 text-white">
           <div className="2xl:w-[82%]">
             <Titleline
               className="justify-start -my-2"
@@ -59,14 +59,14 @@ const Resources = () => {
         </div>
 
         {/* Right Circles */}
-        <div className="w-2/3 flex items-center justify-center">
-          <div className="flex -space-x-10">
+        <div className="lg:w-2/3 flex items-center justify-center">
+          <div className="flex flex-wrap justify-center md:-space-x-10">
             {NumberList.map((item) => (
               <div
                 key={item.id}
-                className="w-56 h-56 rounded-full backdrop-blur-xl bg-white/20 border-2 border-white flex flex-col items-center justify-center text-center text-white hover:text-primaryStart transition duration-300 hover:bg-white space-y-3 group hover:shadow-xl hover:shadow-primaryStart hover:-translate-y-3"
+                className="w-48 h-48 md:w-52 md:h-52 lg:w-56 lg:h-56 rounded-full backdrop-blur-xl bg-white/20 border-2 border-white flex flex-col items-center justify-center text-center text-white hover:text-primaryStart transition duration-300 hover:bg-white space-y-3 group hover:shadow-xl hover:shadow-primaryStart hover:-translate-y-3"
               >
-                <h3 className="text-6xl font-bold">
+                <h3 className="text-4xl md:text-6xl font-bold">
                   <CountUp
                     end={item.number}
                     duration={2.5}
@@ -75,7 +75,7 @@ const Resources = () => {
                   />
                   {item.suffix}
                 </h3>
-                <p className="text-xl px-6 text-white group-hover:text-textsecondary">{item.text}</p>
+                <p className="md:text-xl px-6 text-white group-hover:text-textsecondary">{item.text}</p>
               </div>
             ))}
           </div>
