@@ -34,7 +34,7 @@ const Footer = () => {
   return (
     <div
       style={{ backgroundImage: `url(${FooterBg})` }}
-      className="bg-cover py-20 rounded-t-3xl  text-white -mt-5"
+      className="bg-cover py-20 rounded-t-3xl  text-white -mt-5 pb-12"
     >
       <div className="container lg:flex justify-center items-center gap-8">
         {/* Left section */}
@@ -111,6 +111,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+       <p className="text-center pt-4 sm:pt-5 md:pt-8 text-textsecondary text-sm  mt-auto">
+            © {new Date().getFullYear()} Developed by <a href="https://www.vernoxy.com/" target="_blank">@Vernoxy</a>
+          </p>
     </div>
   );
 };

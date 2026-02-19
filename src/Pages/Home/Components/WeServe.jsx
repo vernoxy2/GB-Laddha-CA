@@ -2,6 +2,14 @@ import React from "react";
 import WeServeBg from "../../../assets/HomePageImg/WeServeBg.png";
 import Titleline from "../../../Components/Titleline";
 import Icon1 from "../../../assets/HomePageImg/IndustriesIcons/InIcon1.svg";
+import Icon2 from "../../../assets/HomePageImg/IndustriesIcons/InIcon2.svg";
+import Icon3 from "../../../assets/HomePageImg/IndustriesIcons/InIcon3.svg";
+import Icon4 from "../../../assets/HomePageImg/IndustriesIcons/InIcon4.svg";
+import Icon5 from "../../../assets/HomePageImg/IndustriesIcons/InIcon5.svg";
+import Icon6 from "../../../assets/HomePageImg/IndustriesIcons/InIcon6.svg";
+import Icon7 from "../../../assets/HomePageImg/IndustriesIcons/InIcon7.svg";
+import Icon8 from "../../../assets/HomePageImg/IndustriesIcons/InIcon8.svg";
+import Icon9 from "../../../assets/HomePageImg/IndustriesIcons/InIcon9.svg";
 
 const IndustriesList = [
   {
@@ -11,42 +19,42 @@ const IndustriesList = [
   },
   {
     id: 2,
-    icon: Icon1,
+    icon: Icon2,
     Ind_name: "Manufacturing",
   },
   {
     id: 3,
-    icon: Icon1,
+    icon: Icon3,
     Ind_name: "Traders & Distributors",
   },
   {
     id: 4,
-    icon: Icon1,
+    icon: Icon4,
     Ind_name: "Real Estate",
   },
   {
     id: 5,
-    icon: Icon1,
+    icon: Icon5,
     Ind_name: "Education Industry",
   },
   {
     id: 6,
-    icon: Icon1,
+    icon: Icon6,
     Ind_name: "Engineering",
   },
   {
     id: 7,
-    icon: Icon1,
+    icon: Icon7,
     Ind_name: "Textiles & Garments",
   },
   {
     id: 8,
-    icon: Icon1,
+    icon: Icon8,
     Ind_name: "Chemicals",
   },
   {
     id: 9,
-    icon: Icon1,
+    icon: Icon9,
     Ind_name: "Pharmaceuticals",
   },
 ];

@@ -7,19 +7,20 @@ import Resources from "./Components/Resources";
 import OurServices from "./Components/OurServices";
 import AboutUs from "./Components/AboutUs";
 import Scroll from "./Components/Scroll";
-
+import HeroSlider from "./Components/HeroSlider";
 
 const Home = () => {
   return (
     <>
-    <Header
+    <HeroSlider/>
+    {/* <Header
         backgroundImage={TeamBg}
         title={"Our"}
         color={"Team"}
         subtitle={
           "A multidisciplinary team of professionals delivering ethical, reliable, and solution-driven expertise with consistency, collaboration, and client-focused excellence."
         }
-      />
+      /> */}
       <Scroll/>
       <AboutUs/>
       <OurServices />

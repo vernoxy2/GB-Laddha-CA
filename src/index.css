@@ -5,7 +5,7 @@
 
 @layer components {
   h1 {
-    @apply text-5xl font-bold font-plusJakartaSans;
+    @apply text-5xl font-bold font-plusJakartaSans leading-tight;
   }
   h2 {
     @apply text-4xl font-bold font-plusJakartaSans;
@@ -35,5 +35,11 @@
 
   .bg-gradient-primary {
     @apply bg-gradient-to-r from-primaryStart to-primaryEnd;
+  }
+}
+@layer utilities {
+  .text-stroke-only {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
   }
 }
