@@ -40,7 +40,7 @@ export default {
       },
 
       animation: {
-        scroll: "scroll 70s linear infinite",
+        scroll: "scroll 10s linear infinite ",
         typing:
           "typing 2s steps(20) infinite alternate, blink .7s infinite",
       },
