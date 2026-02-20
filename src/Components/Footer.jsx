@@ -7,7 +7,7 @@ import { FaSquareInstagram, FaSquareWhatsapp } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 import { PiMapPinLight, PiPhoneCallLight } from "react-icons/pi";
 import { CiMail } from "react-icons/ci";
-import Bullet from "./bullet";
+import Bullet from "./Bullet";
 
 const FooterLinks = [
   { name: "Home", path: "/" },
