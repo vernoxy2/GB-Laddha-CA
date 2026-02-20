@@ -18,14 +18,14 @@ const StrengthList = [
   {
     id: 2,
     icon: Icon2,
-    title: "Large & Experienced Professional Team",
-    text: "Backed by Chartered Accountants, CS, MBAs, Cost Accountants, and trained staff ensuring timely and dependable execution.",
+    title: "One-Roof Solution for All Compliance Needs",
+    text: "Complete taxation, audit, regulatory, litigation, and advisory services handled seamlessly under one roof.",
   },
   {
     id: 3,
     icon: Icon3,
-    title: "One-Roof Solution for All Compliance Needs",
-    text: "Complete taxation, audit, regulatory, litigation, and advisory services handled seamlessly under one roof.",
+    title: "Large & Experienced Professional Team",
+    text: "Backed by Chartered Accountants, CS, MBAs, Cost Accountants, and trained staff ensuring timely and dependable execution.",
   },
   {
     id: 4,
@@ -56,7 +56,7 @@ const WhyChooseus = () => {
       <div className="container">
         <div className="ml-auto xl:w-2/3 ">
           <Titleline className="justify-start" Title={"why choose us"} />
-          <h2 className="text-3xl mb-14 font-bold max-w-[45%]">
+          <h2 data-aos="fade-right" className="text-2xl md:text-3xl mb-14 font-bold md:w-1/2 pr-2">
             Professional{" "}
             <span className="text-gradient-primary">
               Strength You Can Depend
@@ -65,7 +65,8 @@ const WhyChooseus = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {StrengthList.map((item) => (
-              <div key={item.id} className="space-y-3">
+              <div data-aos="fade-up" data-aos-delay="100" key={item.id} className="space-y-3 border-b md:border-none border-textprimary/50 pb-4 p-1">
+                  
                 <img src={item.icon} alt="" className="w-10" />
                   <h3 className="font-bold text-2xl 2xl:max-w-[70%]">{item.title}</h3>
                   <p>{item.text}</p>

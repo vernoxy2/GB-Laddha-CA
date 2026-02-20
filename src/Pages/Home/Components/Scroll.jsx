@@ -34,24 +34,24 @@ const ScrollData = [
 
 const Scroll = () => {
   return (
-    <div className="overflow-hidden container md:px-0 py-6">
+    <div className="overflow-hidden container md:px-0 py-3 md:py-6">
       <div className="flex animate-scroll w-max">
         {[...ScrollData, ...ScrollData].map((item, index) => (
           <div
             key={item.id + "-" + index}
-            className="mx-4 flex-shrink-0 w-80 lg:w-96"
+            className="mx-2 md:mx-4 flex-shrink-0 w-80 lg:w-96"
           >
             <div className="flex items-center gap-4">
               <LazyImage
                 src={item.icon}
                 alt={item.title}
-                className="h-12 w-auto"
+                className="h-8 md:h-12 w-auto"
               />
               <div>
-                <p className="text-primaryStart text-lg md:text-2xl font-plusJakartaSans">
+                <p className="text-primaryStart text-lg md:text-xl lg:text-2xl font-plusJakartaSans">
                   {item.title}
                 </p>
-                <p>{item.text}</p>
+                <p className="text-xs md:text-base lg:text-xl">{item.text}</p>
               </div>
             </div>
           </div>

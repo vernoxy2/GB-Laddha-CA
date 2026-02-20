@@ -1,16 +1,39 @@
 import React from "react";
-import ContactBg from "../assets/ContactUsImg/ContactBg.png";
 
-const Header = ({ title, color, subtitle , backgroundImage}) => {
+const Header = ({ title, color, subtitle, backgroundImage }) => {
   return (
-    <div className="bg-cover pt-48" style={{ backgroundImage: `url(${backgroundImage})` }}>
-      <div className="container space-y-6 py-40">
-        <h1 className="text-white ">
-          {title}<span className="text-gradient-primary"> {color}</span>
+    <section
+      className="relative w-full bg-cover bg-center space-y-0"
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/60" />
+
+      {/* Content */}
+      <div
+        className="relative container 
+                   min-h-[300px] xl:min-h-[520px]
+                   flex flex-col justify-center
+                   space-y-4 md:space-y-6 text-white pt-12 md:pt-20"
+      >
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold leading-tight"
+        >
+          {title}
+          <span className="text-gradient-primary"> {color}</span>
         </h1>
-        <p className="text-white max-w-lg">{subtitle}</p>
+
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="max-w-md text-sm sm:text-base md:text-lg text-gray-200"
+        >
+          {subtitle}
+        </p>
       </div>
-    </div>
+    </section>
   );
 };
 

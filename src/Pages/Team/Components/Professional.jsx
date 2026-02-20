@@ -9,29 +9,41 @@ import "slick-carousel/slick/slick-theme.css";
 import LazyImage from "../../../Components/LazyImage";
 
 const ProfessionalTeamList = [
-  {
-    id: 1,
-    name: "CA Shravan Kumar Sonthalia",
-    qualification: "F.C.A.",
-    text: "Bank Audit, Tax Audit & Income Tax",
-  },
+  // {
+  //   id: 1,
+  //   name: "CA Shravan Kumar Sonthalia",
+  //   qualification: "F.C.A.",
+  //   text: "",
+  // },
   {
     id: 2,
     name: "CA Chhaya M. Kothari",
     qualification: "B.Com., F.C.A., DISA, FAFD",
-    text: "Direct Tax, RERA Registration & Certifications, Management Consultancy",
+    text: "Miss Chhaya Kothari, Partner, was enrolled as a Member of ICAI in year 2010 and qualified as DISA in the year 2012. She has experience in the fields of Statutory Audit, Internal Audit, System Audit, Drafting representation for income tax appellate proceedings, Income tax demand issues, refund issues, rectification &amp; other related matters and Tax-planning of business entities.",
   },
   {
     id: 3,
     name: "CA Rahul Modi",
     qualification: "B.Com., F.C.A.",
-    text: "In-charge – Silvassa Branch | Indirect Taxation, Management Consultancy, TDS Compliances",
+    text: "Mr. Rahul Modi, Partner, in charge of Silvassa Branch was enrolled as a Member of ICAI in year 2016 and has vast experience in handling the fields of Tax Audits, Statutory Audit, Internal Audit, Stock Audit &amp; GST Audits and related compliances.",
   },
   {
     id: 4,
     name: "CA Khushbu Bohra",
     qualification: "B.Com., A.C.A.",
-    text: "Direct Taxation & Statutory Audit",
+    text: "Mrs Khushbu Bohra, Partner, was enrolled as a Member of ICAI in year 2019 and possesses strong practical expertise in Direct Taxation and Statutory Audit. She provides  comprehensive advisory and compliance support, assisting clients with tax planning, assessments, and audit requirements while ensuring adherence to regulatory standards.",
+  },
+  {
+    id: 5,
+    name: "CA Devanshi Doshi,",
+    qualification: "B.Com., F.C.A.",
+    text: "Miss Devanshi Doshi, Partner, was enrolled as a Member of ICAI in year 2019 and specialized expertise in Project Finance. She assists clients in financial structuring, loan syndication, documentation, and liaisoning with financial institutions, ensuring efficient funding solutions and timely execution of projects.",
+  },
+  {
+    id: 5,
+    name: "CA Lokesh Khadaria,",
+    qualification: "B.Com., F.C.A.",
+    text: "Mr. Lokesh Khadaria, Partner, was enrolled as a Member of ICAI in year 2010 and qualified as DISA. He brings extensive experience in Concurrent Audit, Indirect Taxation, and GST litigation matters. He provides strategic advisory and representation services, ensuring regulatory compliance and effective resolution of tax disputes.",
   },
 ];
 

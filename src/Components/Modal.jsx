@@ -35,7 +35,7 @@ const Modal = ({
       onClick={onClose}
     >
       <div
-        className={`relative bg-white w-full ${maxWidth} rounded-xl shadow-2xl`}
+        className={`relative bg-white w-full ${maxWidth} rounded-xl shadow-2xl m-2`}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}

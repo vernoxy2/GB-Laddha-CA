@@ -18,8 +18,8 @@ const Navbar = () => {
 
   return (
     <header className="absolute top-0 left-0 w-full z-50">
-      <div className="container mx-auto py-6">
-        <div className="flex items-center justify-between bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl px-6 py-3">
+      <div className="container mx-auto py-4">
+        <div className="flex items-center justify-between bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl px-3 md:px-6 py-3">
 
           {/* Logo */}
           <Link to="/">
