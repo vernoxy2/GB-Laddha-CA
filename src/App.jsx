@@ -1,5 +1,7 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Layout from "./Layout";
 import PrimaryServiceCard from "./Components/PrimaryServiceCard.jsx";
 
@@ -20,6 +22,15 @@ const Loader = () => (
 );
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 700, // animation duration
+      once: true, // animation only once
+      easing: "ease-in-out",
+      offset: 80, // trigger distance
+    });
+  }, []);
+
   return (
     <Suspense fallback={<Loader />}>
       <Routes>
@@ -31,7 +42,7 @@ const App = () => {
           <Route path="OurTeam" element={<Team />} />
         </Route>
       </Routes>
-          <PrimaryServiceCard />
+      <PrimaryServiceCard />
     </Suspense>
   );
 };

@@ -115,34 +115,32 @@ const OurServices = () => {
     <section className="container space-y-0">
       <div>
         <Titleline Title={"Our Services"} className="justify-center -mb-2" />
-        <h2 className="text-center">
+        <h2 data-aos="fade-up" data-aos-delay="100" className="text-center">
           Professional <span className="text-gradient-primary">Accounting</span>{" "}
           Services
         </h2>
-        <p className="text-center max-w-4xl mx-auto mt-3">
-          <strong>With over 25 years</strong> of professional experience, we
-          offer a comprehensive range of audit, taxation, compliance, litigation,
-          and advisory services under one roof. Our multidisciplinary team brings
-          deep regulatory knowledge and practical insight to support businesses,
-          institutions, and individuals across diverse legal and financial
-          requirements.
+        <p data-aos="fade-up" data-aos-delay="100" className="text-center max-w-4xl mx-auto mt-3">
+          <strong>With over 25 years</strong> of professional experience, we offer a comprehensive range of audit, taxation, internal audit, Project finance, GST, TransferbPrising , Startup advising,under one roof. Our multidisciplinary team brings deep regulatory knowledge and practical insight to support businesses, institutions, and individuals across diverse legal and financial requirements.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch pt-10">
-        {ServicesList.map((item) => (
+      <div  className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch pt-10">
+        {ServicesList.map((item, index) => (
           <div
             key={item.id}
-            className="space-y-3 group hover:bg-gradient-primary duration-300 rounded-2xl h-full px-6 py-9 border-2 border-primaryStart flex flex-col justify-between"
+            data-aos="zoom-in"
+      data-aos-delay={index * 150}   // 👈 stagger delay
+      data-aos-duration="800"
+            className="space-y-3 group hover:scale-105 hover:bg-gradient-primary duration-300 rounded-2xl h-full px-6 py-9 border-2 border-primaryStart flex flex-col justify-between"
           >
             <div className="space-y-4">
-              <div className="flex gap-8">
+              <div className="flex flex-wrap gap-8">
                 <img
                   src={item.icon}
                   alt=""
-                  className="transition duration-200 group-hover:brightness-0 group-hover:invert flex items-center justify-center"
+                  className="transition duration-200 group-hover:brightness-0 group-hover:invert flex items-center justify-center w-fit"
                 />
-                <h3 className="font-bold text-2xl group-hover:text-white">
+                <h3 className="font-bold text-xl md:text-2xl group-hover:text-white flex-1">
                   {item.title}
                 </h3>
               </div>

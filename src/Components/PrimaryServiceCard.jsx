@@ -8,10 +8,10 @@ const PrimaryServiceCard = ({ isOpen, onClose, service }) => {
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} maxWidth="max-w-2xl">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
 
         {/* Left Content */}
-        <div className="p-7 pl-10 flex flex-col justify-between">
+        <div className="p-7 pl-10 flex flex-col justify-between ">
           <div>
             <h4 className="text-lg font-semibold text-primaryStart mb-4">
               {service.title}
@@ -34,7 +34,7 @@ const PrimaryServiceCard = ({ isOpen, onClose, service }) => {
         <LazyImage
           src={service.cardImage}
           alt={service.title}
-          className="rounded-r-xl object-cover w-full h-full"
+          className="rounded-r-xl object-cover w-full h-full hidden sm:block"
         />
       </div>
     </Modal>

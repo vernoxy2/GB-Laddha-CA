@@ -1,8 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import Hero1 from "../../../assets/HomePageImg/Slider/Hero1.png";
-import Hero2 from "../../../assets/HomePageImg/Slider/Hero1.png";
+import Hero1 from "../../../assets/HomePageImg/Slider/Slide1.png";
+import Hero2 from "../../../assets/HomePageImg/Slider/Slide2.png";
+import Hero3 from "../../../assets/HomePageImg/Slider/Slide3.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -29,16 +30,31 @@ const slides = [
   {
     id: 2,
     bg: Hero2,
-    badge: "25+ Years Experience",
+    // badge: "25+ Years Experience",
     title: (
       <h1 className="font-bold">
-        Of Trusted{" "}
-        <span className="text-gradient-primary">Chartered Accountancy</span> in
-        Vapi
+        Your Trusted Partner for Subsidies{" "}
+        <span className="text-gradient-primary">& Compliance</span>
       </h1>
     ),
     subtitle: "Our Priority",
-    desc: "Expert solutions in taxation, audits, GST compliance, subsidy assistance, ROC filings, and more all under one roof, helping Gujarat businesses grow with confidence and complete peace of mind.",
+    desc: "Specialized guidance on Gujarat Govt schemes, Central incentives, GST, income tax, statutory audits, and more – helping industrial units in Gujarat, maharashtra, daman and diu, Silvassa and dadra nagar haveli, and beyond unlock funding and stay fully compliant with ease.",
+    buttonText: "Request Free Consultation",
+    buttonLink: "/contactus",
+  },
+  {
+    id: 3,
+    bg: Hero3,
+    badge: "2026 GST Compliance",
+    title: (
+      <h1 className="font-bold">
+        From Registration to Litigation Full Support Under{" "}
+        <span className="text-gradient-primary">One Roof</span>
+        
+      </h1>
+    ),
+    subtitle: "Our Priority",
+    desc: "Seamless GST handling from registration to litigation defense — expert filings, refund maximization, notice replies & advisory, aligned with 2026 reforms for Gujarat businesses.",
     buttonText: "Request Free Consultation",
     buttonLink: "/contactus",
   },
@@ -70,43 +86,56 @@ const HeroSlider = () => {
   const { Swiper, SwiperSlide, Autoplay, Pagination } = swiperData;
 
   return (
-    <section className="w-full py-0 relative">
-      <Swiper
-        modules={[Autoplay, Pagination]}
-        autoplay={{ delay: 4000 }}
-        speed={1200}
-        loop
-        pagination={{
-          clickable: true,
-        }}
-        onSwiper={(swiper) => (swiperRef.current = swiper)}
-        className="w-full h-[300px] md:h-[450px] lg:h-[550px] xl:h-[700px]"
-      >
-        {slides.map((slide) => (
-          <SwiperSlide key={slide.id}>
-            <div
-              className="relative h-full py-24 flex items-end bg-cover bg-center"
-              style={{ backgroundImage: `url(${slide.bg})` }}
-            >
-              {/* Content */}
-              <div className="relative container mx-auto text-white">
-                <div className="w-full lg:w-1/2 2xl:w-[40%] space-y-3">
-                  {/* Badge */}
-                  {slide.badge && (
-                    <div className="inline-flex items-center gap-3">
-                      <span className="text-8xl font-bold font-plusJakartaSans text-transparent text-stroke-only">
-                        {slide.badge.split(" ")[0]}
-                      </span>
-                      <div className="w-0.5 h-20 bg-white" />
-                      <span className="text-white text-2xl font-bold tracking-widest font-plusJakartaSans w-28">
-                        {slide.badge.split(" ").slice(1).join(" ")}
-                      </span>
-                    </div>
-                  )}
+  <section className="w-full relative overflow-hidden py-0">
+    <Swiper
+      modules={[Autoplay, Pagination]}
+      autoplay={{ delay: 4000 }}
+      speed={1200}
+      loop
+      pagination={{ clickable: true }}
+      onSwiper={(swiper) => (swiperRef.current = swiper)}
+      className="w-full  h-[460px] sm:h-[500px] md:h-[600px] lg:h-[700px]"
+    >
+      {slides.map((slide) => (
+        <SwiperSlide key={slide.id}>
+          <div
+            className="relative h-full flex items-center bg-cover bg-center pt-20"
+            style={{ backgroundImage: `url(${slide.bg})` }}
+          >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/50" />
 
-                  <h1>{slide.title}</h1>
-                  <p className="text-white">{slide.desc}</p>
+            {/* Content */}
+            <div className="relative container text-white">
+              <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6">
 
+                {/* Badge */}
+                {slide.badge && (
+                  <div className="flex items-center gap-3">
+                    <span className="text-4xl sm:text-6xl lg:text-7xl font-bold font-plusJakartaSans">
+                      {slide.badge.split(" ")[0]}
+                    </span>
+
+                    <div className="w-[2px] h-12 sm:h-16 bg-white" />
+
+                    <span className="text-sm sm:text-lg lg:text-xl font-semibold tracking-wider">
+                      {slide.badge.split(" ").slice(1).join(" ")}
+                    </span>
+                  </div>
+                )}
+
+                {/* Title */}
+                <div className="text-2xl sm:text-4xl lg:text-5xl leading-tight">
+                  {slide.title}
+                </div>
+
+                {/* Description */}
+                <p className="text-sm sm:text-base lg:text-lg text-gray-200 max-w-xl">
+                  {slide.desc}
+                </p>
+
+                {/* Button */}
+                <div>
                   <PrimaryBtn
                     BtnText={slide.buttonText}
                     to={slide.buttonLink}
@@ -114,30 +143,29 @@ const HeroSlider = () => {
                 </div>
               </div>
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
 
-      {/* ✅ Bottom-Right Navigation Buttons */}
-      <div className="absolute bottom-6 right-6 z-10 flex items-center gap-2">
-        {/* Prev Button */}
-        <button
-          onClick={() => swiperRef.current?.slidePrev()}
-          className="group flex items-center justify-center w-12 h-12 rounded-full bg-white/10 border border-white/30 backdrop-blur-sm hover:bg-primary hover:border-primary transition-all duration-300"
-        >
-          <ChevronRightIcon className="rotate-180 text-white transition-transform duration-200 group-hover:-translate-x-0.5" />
-        </button>
+    {/* Navigation Buttons */}
+    <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 z-10 flex gap-3">
+      <button
+        onClick={() => swiperRef.current?.slidePrev()}
+        className="group flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/20 backdrop-blur-md hover:bg-primary transition-all duration-300"
+      >
+        <ChevronRightIcon className="rotate-180 text-white group-hover:-translate-x-1 transition" />
+      </button>
 
-        {/* Next Button */}
-        <button
-          onClick={() => swiperRef.current?.slideNext()}
-          className="group flex items-center justify-center w-12 h-12 rounded-full bg-white/10 border border-white/30 backdrop-blur-sm hover:bg-primary hover:border-primary transition-all duration-300"
-        >
-          <ChevronRightIcon className=" text-white transition-transform duration-200 group-hover:translate-x-0.5" />
-        </button>
-      </div>
-    </section>
-  );
+      <button
+        onClick={() => swiperRef.current?.slideNext()}
+        className="group flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/20 backdrop-blur-md hover:bg-primary transition-all duration-300"
+      >
+        <ChevronRightIcon className="text-white group-hover:translate-x-1 transition" />
+      </button>
+    </div>
+  </section>
+);
 };
 
 export default HeroSlider;

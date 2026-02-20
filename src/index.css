@@ -5,13 +5,13 @@
 
 @layer components {
   h1 {
-    @apply text-5xl font-bold font-plusJakartaSans leading-tight;
+    @apply text-3xl md:text-5xl font-bold font-plusJakartaSans leading-tight;
   }
   h2 {
-    @apply text-4xl font-bold font-plusJakartaSans;
+    @apply text-2xl md:text-4xl font-bold font-plusJakartaSans;
   }
   p {
-    @apply text-xl font-dmSans text-[#666666] leading-relaxed;
+    @apply md:text-xl font-dmSans text-[#666666] leading-relaxed;
   }
 
   section {

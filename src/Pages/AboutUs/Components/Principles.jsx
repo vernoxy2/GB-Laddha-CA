@@ -5,6 +5,7 @@ import Purpose from "../../../assets/AboutUsImgs/Purpose.png";
 import { IoIosEye } from "react-icons/io";
 import { GoGoal } from "react-icons/go";
 import { FaHands } from "react-icons/fa";
+import LazyImage from "../../../Components/LazyImage";
 
 const List = [
   {
@@ -17,7 +18,7 @@ const List = [
     id: 2,
     title: "Vision",
     icon: <IoIosEye />,
-    text: "To deliver reliable professional services with integrity, excellence, and confidentiality, while addressing each client’s unique business needs with care and precision.",
+    text: "To build a one-roof professional platform offering comprehensive taxation, audit, and financial solutions—while strengthening the recognition of the Chartered Accountancy profession and contributing to nation-building.",
   },
   {
     id: 3,
@@ -42,22 +43,44 @@ const List = [
 const Principles = () => {
   return (
     <section className="container mx-auto py-12">
-      <MainHeading BlackText="Our Purpose &" GradientText="Principles" />
+      <MainHeading BlackText="Our Purpose &" GradientText="Principles" AOS={'fade-up'} />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left - Images (Sticky) */}
-        <div className="flex gap-4"> <img src={Purpose} alt="" className="w-fit h-fit" /> <img src={Principless} alt="" className="w-fit h-fit" /> </div>
+        <div className="flex gap-4 border border-black">
+          {" "}
+          <LazyImage
+            src={Purpose}
+            alt=""
+            className="flex-shrink-0 w-fit max-h-fit hidden sm:block "
+            AOS={'zoom-in'}
+          />{" "}
+          <LazyImage
+            src={Principless}
+            alt=""
+            className="w-auto sm:w-fit"
+            AOS={'zoom-in'}
+          />{" "}
+        </div>
 
         {/* Right - Scrollable list */}
         <div className="max-h-[500px] overflow-y-auto pr-4 scroll-hide">
-          <ul className="space-y-7">
+          <ul className="space-y-4 md:space-y-7">
             {List.map((item) => (
-              <li key={item.id} className="flex gap-4">
+              <li
+                key={item.id}
+                className="flex gap-4 border-b border-textprimary/20 pb-5"
+              >
                 <div>
                   <div className="flex gap-3 items-center">
-                    <span className="text-primaryStart text-5xl">{item.icon}</span>
+                    <span className="text-primaryStart text-5xl">
+                      {item.icon}
+                    </span>
                     <h4 className="font-bold text-2xl text-textsecondary">
-                      Our <span className="text-gradient-primary">{item.title}</span>
+                      Our{" "}
+                      <span className="text-gradient-primary">
+                        {item.title}
+                      </span>
                     </h4>
                   </div>
                   <p className="mt-2 text-gray-700">{item.text}</p>
