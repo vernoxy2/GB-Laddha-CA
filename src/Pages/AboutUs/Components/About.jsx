@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import AboutUss from "../../../assets/AboutUsImgs/AboutUs.png";
 import MainHeading from "../../../Components/MainHeading";
 import { motion, useInView } from "framer-motion";
-import Bullet from "../../../Components/bullet";
+import Bullet from "../../../Components/Bullet";
 
 const About = () => {
   const ref = useRef(null);
