@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import PrimaryBtn from "../../../Components/PrimaryBtn";
 import { ChevronRightIcon } from "lucide-react";
-import SecondaryBtn from "../../../Components/secondaryBtn";
+import SecondaryBtn from "../../../Components/SecondaryBtn";
 
 const slides = [
   {
