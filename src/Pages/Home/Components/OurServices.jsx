@@ -103,7 +103,6 @@ const ServicesList = [
       "80G & 12A Registrations ",
       "IPR Works (Trademark, Copyright, Patent) ",
       "Certifications under FEMA, TP, 15CB",
-      
     ],
   },
 ];
@@ -119,18 +118,27 @@ const OurServices = () => {
           Professional <span className="text-gradient-primary">Accounting</span>{" "}
           Services
         </h2>
-        <p data-aos="fade-up" data-aos-delay="100" className="text-center max-w-4xl mx-auto mt-3">
-          <strong>With over 25 years</strong> of professional experience, we offer a comprehensive range of audit, taxation, internal audit, Project finance, GST, TransferbPrising , Startup advising,under one roof. Our multidisciplinary team brings deep regulatory knowledge and practical insight to support businesses, institutions, and individuals across diverse legal and financial requirements.
+        <p
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="text-center max-w-4xl mx-auto mt-3"
+        >
+          <strong>With over 25 years</strong> of professional experience, we
+          offer a comprehensive range of audit, taxation, internal audit,
+          Project finance, GST, TransferbPrising , Startup advising,under one
+          roof. Our multidisciplinary team brings deep regulatory knowledge and
+          practical insight to support businesses, institutions, and individuals
+          across diverse legal and financial requirements.
         </p>
       </div>
 
-      <div  className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch pt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch pt-10">
         {ServicesList.map((item, index) => (
           <div
             key={item.id}
             data-aos="zoom-in"
-      data-aos-delay={index * 150}   // 👈 stagger delay
-      data-aos-duration="800"
+            data-aos-delay={index * 150} // 👈 stagger delay
+            data-aos-duration="800"
             className="space-y-3 group hover:scale-105 hover:bg-gradient-primary duration-300 rounded-2xl h-full px-6 py-9 border-2 border-primaryStart flex flex-col justify-between"
           >
             <div className="space-y-4">
