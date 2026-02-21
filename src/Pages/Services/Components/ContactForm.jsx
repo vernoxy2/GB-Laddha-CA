@@ -9,8 +9,8 @@ export default function ContactForm() {
   });
 
   return (
-    <div className="mt-8">
-      <h3 className="text-3xl font-bold text-gray-800 mb-4 font-plusJakartaSans">
+    <div className="mt-8 overflow-hidden">
+      <h3 data-aos="fade-up" data-aos-duration="800" className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 font-plusJakartaSans">
         Collaborate <span className="text-cyan-500">With Us?</span>
       </h3>
       <div className="flex flex-col gap-3">
@@ -20,6 +20,9 @@ export default function ContactForm() {
           { key: "number", placeholder: "Your Number*", type: "tel" },
         ].map(({ key, placeholder, type }) => (
           <input
+            data-aos="fade-left"
+            data-aos-delay={key * 150} // 👈 stagger delay
+            data-aos-duration="800"
             key={key}
             type={type}
             placeholder={placeholder}
@@ -29,6 +32,9 @@ export default function ContactForm() {
           />
         ))}
         <textarea
+        data-aos="fade-left"
+            data-aos-delay="200" // 👈 stagger delay
+            data-aos-duration="800"
           placeholder="Message*"
           rows={4}
           value={form.message}

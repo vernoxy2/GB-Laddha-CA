@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../Components/Header';
 import ServiceBg from "../../assets/ServiceImg/ServiceBg.png";
 import ServicesPage from './Components/ServicesPage';
+import ServicesPagee from './Components/ServicesPagee';
 
 
 const Services = () => {
@@ -16,6 +17,8 @@ const Services = () => {
         }
       />
       <ServicesPage />
+      {/* <ServicesPagee /> */}
+
     </>
   );
 }
