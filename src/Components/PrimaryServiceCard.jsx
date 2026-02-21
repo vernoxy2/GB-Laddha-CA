@@ -2,8 +2,9 @@ import React from "react";
 import LazyImage from "./LazyImage";
 import PrimaryBtn from "./PrimaryBtn";
 import Modal from "./Modal";
+import SecondaryBtn from "./SecondaryBtn";
 
-const PrimaryServiceCard = ({ isOpen, onClose, service }) => {
+const PrimaryServiceCard = ({ isOpen, onClose, service, onConsult  }) => {
   if (!service) return null;
 
   return (
@@ -26,7 +27,10 @@ const PrimaryServiceCard = ({ isOpen, onClose, service }) => {
           </div>
 
           <div className="mt-6">
-            <PrimaryBtn to="/services" BtnText="Consult Our Experts" />
+            <SecondaryBtn
+              onClick={() => onConsult(service)}
+              Text="Consult Our Experts"
+            />
           </div>
         </div>
 

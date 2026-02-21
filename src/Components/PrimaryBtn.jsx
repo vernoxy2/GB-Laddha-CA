@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 const PrimaryBtn = ({ BtnText, to, className }) => {
   return (
     <Link
+    data-aos="zoom-in-up"
       to={to}
-      className={`group inline-flex items-center font-bold text-white py-1.5 md:py-3 px-2 md:px-4 rounded-md bg-gradient-to-r from-primaryStart to-primaryEnd transition duration-300 hover:scale-105 hover:shadow-lg overflow-hidden ${className}`}
+      className={`group inline-flex items-center font-bold text-white py-3 px-4 rounded-md bg-gradient-to-r from-primaryStart to-primaryEnd transition duration-300 hover:scale-105 hover:shadow-lg overflow-hidden ${className}`}
     >
       {BtnText}
 
