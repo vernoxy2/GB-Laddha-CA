@@ -13,7 +13,7 @@ import SerCard4 from "../../../assets/HomePageImg/ServiceIcon/SerCard4.svg";
 import SerCard5 from "../../../assets/HomePageImg/ServiceIcon/SerCard5.svg";
 import SerCard6 from "../../../assets/HomePageImg/ServiceIcon/SerCard6.svg";
 import PrimaryServiceCard from "../../../Components/PrimaryServiceCard";
-import SecondaryBtn from "../../../Components/secondaryBtn";
+import SecondaryBtn from "../../../Components/SecondaryBtn";
 
 const ServicesList = [
   {
