@@ -8,7 +8,7 @@ const LazyImage = ({ src, alt, className, AOS, ...rest }) => {
       alt={alt}
       loading="lazy"
       decoding="async"
-      className={className}
+      className={`${className} pointer-events-none`}
       {...rest}
     />
   );

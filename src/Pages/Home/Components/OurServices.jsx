@@ -13,6 +13,7 @@ import SerCard4 from "../../../assets/HomePageImg/ServiceIcon/SerCard4.svg";
 import SerCard5 from "../../../assets/HomePageImg/ServiceIcon/SerCard5.svg";
 import SerCard6 from "../../../assets/HomePageImg/ServiceIcon/SerCard6.svg";
 import PrimaryServiceCard from "../../../Components/PrimaryServiceCard";
+import SecondaryBtn from "../../../Components/SecondaryBtn";
 
 const ServicesList = [
   {
@@ -139,7 +140,7 @@ const OurServices = () => {
             data-aos="zoom-in"
             data-aos-delay={index * 150} // 👈 stagger delay
             data-aos-duration="800"
-            className="space-y-3 group hover:scale-105 hover:bg-gradient-primary duration-300 rounded-2xl h-full px-6 py-9 border-2 border-primaryStart flex flex-col justify-between"
+            className="space-y-3 group/btn group hover:scale-105 hover:bg-gradient-primary duration-300 rounded-2xl h-full px-6 py-9 border-2 border-primaryStart flex flex-col justify-between"
           >
             <div className="space-y-4">
               <div className="flex flex-wrap gap-8">
@@ -154,7 +155,7 @@ const OurServices = () => {
               </div>
               <p className="group-hover:text-white">{item.subtext}</p>
             </div>
-            <button
+            {/* <button
               onClick={() => setSelectedService(item)}
               className="bg-gradient-primary 
                group-hover:bg-none 
@@ -166,7 +167,11 @@ const OurServices = () => {
                transition-all duration-300 w-fit"
             >
               Read More
-            </button>
+            </button> */}
+            <div className="w-fit">
+
+            <SecondaryBtn onClick={() => setSelectedService(item)}  Text="Read More" className={'border-2 border-white '}/>
+            </div>
           </div>
         ))}
       </div>

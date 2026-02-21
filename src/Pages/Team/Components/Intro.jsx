@@ -12,19 +12,20 @@ const Intro = () => {
         
         {/* Image */}
         <LazyImage
+        AOS={'zoom-out'}
           src={TeamIntro}
           alt="team introduction"
-          className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
+          className="w-full h-[580px] sm:h-[450px] lg:h-[500px] object-cover"
         />
 
         {/* Dark Overlay */}
-        {/* <div className="absolute inset-0 bg-black/60"></div> */}
+        <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Text Content */}
         <div className="absolute inset-0 flex items-center justify-center px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl text-center space-y-4 sm:space-y-6">
             
-            <p className="text-white leading-relaxed">
+            <p data-aos="fade-up" data-aos-delay="100" className="text-white leading-relaxed">
               <span className="text-gradient-primary font-bold">
                 At G. B. Laddha & Co. LLP,
               </span>{" "}
@@ -35,7 +36,7 @@ const Intro = () => {
               to quality and integrity.
             </p>
 
-            <p className="text-white leading-relaxed">
+            <p data-aos="fade-up" data-aos-delay="100" className="text-white leading-relaxed">
               With deep technical expertise and hands-on industry exposure, our
               team brings a disciplined, solution-oriented approach to every
               engagement. We believe in collaboration, continuous learning, and

@@ -106,9 +106,9 @@ const servicesData = {
     title: "Accounting",
     highlight: "& MIS",
     intro:
-      "We deliver precise bookkeeping, financial reporting, and Management Information Systems that give you real-time visibility into your business performance.",
+      "We help organizations transition from manual systems to efficient, technology-driven accounting and MIS frameworks. Our solutions are designed to enhance control, reporting accuracy, and decision-making.",
     detail:
-      "From day-to-day accounting to advanced MIS dashboards, our solutions ensure accurate financial data flows seamlessly into strategic decision-making processes.",
+      "",
     listTitle: "Our Accounting & MIS services include:",
     items: [
       "Understanding existing manual systems and designing computerized solutions",
@@ -119,21 +119,45 @@ const servicesData = {
       "Inventory",
       "Selling & Distribution"
     ],
+    listTitle2: "Industry-specific solutions for:",
+    items2: [
+      "Manufacturing",
+      "Processing",
+      "Trading",
+      "Construction Contracts",
+      "Software & Service Industries",
+    ],
   },
   "Company Affairs": {
     img: Company,
     title: "Company",
     highlight: "Affairs",
     intro:
-      "We manage all aspects of corporate governance and secretarial compliance, ensuring your company meets its statutory obligations with precision and timeliness.",
+      "We provide complete support for corporate legal and secretarial matters, ensuring statutory compliance and smooth coordination with regulatory authorities.",
     detail:
-      "Our company affairs team handles everything from incorporation to ongoing MCA filings — freeing your leadership to focus on core business operations.",
+      "",
     listTitle: "Our Company Affairs services include:",
     items: [
-      "Company incorporation and registration",
-      "ROC filings and annual compliance",
-      "Board meeting management and minutes",
-      "FEMA / FDI compliance and reporting",
+      "Formation of Private & Public Limited Companies",
+      "Conducting Board Meetings, EGMs & AGMs",
+      "Change of Registered Office (within state or interstate)",
+      "Increase of Authorized Capital",
+      "Allotment of Shares",
+      "Charge Creation & Modification",
+      "Maintenance of Secretarial Registers",
+      "Formation of LLPs"
+    ],
+    listTitle2: "Conversion of:",
+    items2: [
+      "Private Limited Company to LLP",
+      "Partnership Firm to LLP",
+      "Proprietary Concern to LLP / Company",
+    ],
+    listTitle3: "Liaison with:",
+    items3: [
+      "Registrar of Companies (ROC)",
+      "Central Government",
+      "Reserve Bank of India (RBI)",
     ],
   },
   "Audit & Assurance": {
