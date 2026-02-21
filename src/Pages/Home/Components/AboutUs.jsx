@@ -6,6 +6,7 @@ import AboutImg1 from "../../../assets/HomePageImg/AboutImg1.png";
 import AboutImg2 from "../../../assets/HomePageImg/AboutImg2.png";
 import PrimaryBtn from "../../../Components/PrimaryBtn";
 import CountUp from "react-countup";
+import SecondaryBtn from "../../../Components/secondaryBtn";
 
 const AboutUs = () => {
   return (
@@ -17,7 +18,7 @@ const AboutUs = () => {
           data-aos-delay="100"
           src={AboutImg1}
           alt="About Us illustration"
-          className="w-full sm:w-auto h-fit object-cover rounded-xl"
+          className="w-full sm:w-auto h-fit object-cover rounded-xl "
         />
         <LazyImage
           data-aos="fade-up"
@@ -68,7 +69,9 @@ const AboutUs = () => {
             </h3>
           </div>
           <div className="border-l-2 flex items-center justify-center">
-            <PrimaryBtn to="/aboutus" BtnText="Discover More" />
+            {/* <secondaryBtn to="/aboutus" Text="Discover More" /> */}
+            {/* <SecondaryBtn to="/aboutus" Text="Discover More" /> */}
+            <SecondaryBtn to="/aboutus" Text="Discover More" />
           </div>
         </div>
       </div>

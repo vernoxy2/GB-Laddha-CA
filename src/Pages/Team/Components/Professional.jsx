@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Titleline from "../../../Components/Titleline";
 import ProfessionalBg from "../../../assets/TeamImg/ProfessionalBg.svg";
 import Proson from "../../../assets/TeamImg/Person.svg";
@@ -49,6 +49,7 @@ const ProfessionalTeamList = [
 
 // Custom Arrow Components
 const NextArrow = ({ onClick }) => {
+  
   return (
     <button
       onClick={onClick}
@@ -97,6 +98,7 @@ const PrevArrow = ({ onClick }) => {
 };
 
 const Professional = () => {
+  const [activeId, setActiveId] = useState(null);
   const settings = {
     // dots: true,
     infinite: true,
@@ -133,11 +135,11 @@ const Professional = () => {
     >
       <div className="container">
         <Titleline className="justify-center" Title={"Our professional team"} />
-        <h2 className="text-center">
+        <h2 data-aos="fade-up" data-aos-delay="100" className="text-center">
           Experienced Professionals.{" "}
           <span className="text-gradient-primary">Trusted Advisors</span>
         </h2>
-        <p className="max-w-4xl text-center mx-auto pt-4">
+        <p data-aos="fade-up" data-aos-delay="100" className="max-w-4xl text-center mx-auto pt-4">
           Our firm is supported by a strong team of experienced professionals
           who bring specialized expertise across taxation, audit, compliance,
           and advisory services.
@@ -145,25 +147,48 @@ const Professional = () => {
 
         <div className="mt-12">
           <Slider {...settings}>
-            {ProfessionalTeamList.map((item) => (
-              <div key={item.id} className="px-3 h-full">
-                <div className="h-full flex-col">
-                  <LazyImage
-                    src={Proson}
-                    alt=""
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="p-6 md:p-8 border border-[#D8D8D8] rounded-lg bg-white flex flex-col justify-between w-full">
-                    <div className="space-y-3">
-                      <h3 className="font-semibold text-lg">{item.name}</h3>
-                      <p className="text-gray-600">{item.qualification}</p>
-                      <p className="text-gray-700">{item.text}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </Slider>
+  {ProfessionalTeamList.map((item) => {
+    const isExpanded = activeId === item.id;
+
+    return (
+      <div key={item.id} className="px-3 h-full">
+        <div className="h-full flex-col">
+          <LazyImage
+            src={Proson}
+            alt=""
+            className="w-full h-full object-cover"
+          />
+
+          <div className="p-6 md:p-8 border border-[#D8D8D8] rounded-lg bg-white flex flex-col justify-between w-full">
+            <div className="space-y-3">
+              <h3 className="font-semibold text-lg">{item.name}</h3>
+              <p className="text-gray-600">{item.qualification}</p>
+
+              <p
+                className={`text-gray-700 transition-all duration-300 ${
+                  isExpanded ? "" : "line-clamp-4"
+                }`}
+              >
+                {item.text}
+              </p>
+
+              {item.text.length > 120 && (
+                <button
+                  onClick={() =>
+                    setActiveId(isExpanded ? null : item.id)
+                  }
+                  className="text-gradient-primary font-semibold text-sm"
+                >
+                  {isExpanded ? "Read Less" : "Read More"}
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  })}
+</Slider>
         </div>
       </div>
     </section>

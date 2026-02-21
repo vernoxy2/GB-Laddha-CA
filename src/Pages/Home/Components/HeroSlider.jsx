@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import PrimaryBtn from "../../../Components/PrimaryBtn";
 import { ChevronRightIcon } from "lucide-react";
+import SecondaryBtn from "../../../Components/secondaryBtn";
 
 const slides = [
   {
@@ -136,8 +137,8 @@ const HeroSlider = () => {
 
                 {/* Button */}
                 <div>
-                  <PrimaryBtn
-                    BtnText={slide.buttonText}
+                  <SecondaryBtn
+                    Text={slide.buttonText}
                     to={slide.buttonLink}
                   />
                 </div>
