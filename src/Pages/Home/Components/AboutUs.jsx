@@ -6,7 +6,7 @@ import AboutImg1 from "../../../assets/HomePageImg/AboutImg1.png";
 import AboutImg2 from "../../../assets/HomePageImg/AboutImg2.png";
 import PrimaryBtn from "../../../Components/PrimaryBtn";
 import CountUp from "react-countup";
-import SecondaryBtn from "../../../Components/secondaryBtn";
+import SecondaryBtn from "../../../Components/SecondaryBtn";
 
 const AboutUs = () => {
   return (
