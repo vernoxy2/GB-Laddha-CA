@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const SecondaryBtn = ({ Text, to, onClick, className }) => {
   return (
     <Link
+    data-aos="fade-up"
       to={to}
       onClick={onClick}
       className={`group inline-flex items-center hover:font-semibold  text-white py-1.5 md:py-3 px-2 md:px-4 rounded-md bg-gradient-to-r from-primaryStart to-primaryEnd ease-in-out  transition-all duration-300 hover:scale-105 hover:shadow-lg overflow-hidden ${className}`}

@@ -17,7 +17,7 @@ const Services = () => {
         }
       />
       <ServicesPage />
-      {/* <ServicesPagee /> */}
+      <ServicesPagee />
 
     </>
   );

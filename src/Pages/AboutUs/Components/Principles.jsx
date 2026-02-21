@@ -5,6 +5,8 @@ import Purpose from "../../../assets/AboutUsImgs/Purpose.png";
 import { IoIosEye } from "react-icons/io";
 import { GoGoal } from "react-icons/go";
 import { FaHands } from "react-icons/fa";
+import Icon1 from "../../../assets/AboutUsImgs/Icons1.svg";
+import Icon2 from "../../../assets/AboutUsImgs/Icons2.svg";
 import LazyImage from "../../../Components/LazyImage";
 
 const List = [
@@ -29,13 +31,13 @@ const List = [
   {
     id: 4,
     title: "Professional Ethics",
-    icon: <IoIosEye />,
+    icon: Icon2,
     text: "We strictly adhere to the professional code of conduct and uphold the highest ethical standards. We consciously avoid any action that may compromise professional integrity or bring disrepute to the profession.",
   },
   {
     id: 5,
     title: "Responsibility Towards the Nation",
-    icon: <IoIosEye />,
+    icon: Icon1,
     text: "As India continues to attract global investment, professionals play a vital role in shaping trust and transparency. As responsible professionals and citizens, we remain committed to practices that uphold national values, protect India’s global image, and support sustainable economic growth.",
   },
 ];
@@ -43,23 +45,27 @@ const List = [
 const Principles = () => {
   return (
     <section className="container mx-auto py-12">
-      <MainHeading BlackText="Our Purpose &" GradientText="Principles" AOS={'fade-up'} />
+      <MainHeading
+        BlackText="Our Purpose &"
+        GradientText="Principles"
+        AOS={"fade-up"}
+      />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Left - Images (Sticky) */}
-        <div className="flex gap-4 border border-black">
+        <div className="flex justify-center gap-4 ">
           {" "}
           <LazyImage
             src={Purpose}
             alt=""
-            className="flex-shrink-0 w-fit max-h-fit hidden sm:block "
-            AOS={'zoom-in'}
+            className="hidden md:block h-fit md:h-full"
+            AOS={"zoom-in"}
           />{" "}
           <LazyImage
             src={Principless}
             alt=""
-            className="w-auto sm:w-fit"
-            AOS={'zoom-in'}
+            className="w-full sm:w-auto h-fit  object-cover rounded-xl "
+            AOS={"zoom-in"}
           />{" "}
         </div>
 
@@ -73,8 +79,16 @@ const Principles = () => {
               >
                 <div>
                   <div className="flex gap-3 items-center">
-                    <span className="text-primaryStart text-5xl">
-                      {item.icon}
+                    <span className="text-primaryStart text-5xl flex items-center">
+                      {typeof item.icon === "string" ? (
+                        <img
+                          src={item.icon}
+                          alt=""
+                          className="w-11 h-11 object-contain flex-shrink-0"
+                        />
+                      ) : (
+                        item.icon
+                      )}
                     </span>
                     <h4 className="font-bold text-2xl text-textsecondary">
                       Our{" "}
