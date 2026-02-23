@@ -5,7 +5,7 @@ import ServiceContent from "./ServiceContent";
 import ContactForm from "./ContactForm";
 
 export default function ServicesPage() {
-  const [activeService, setActiveService] = useState("Certification Services");
+  const [activeService, setActiveService] = useState("Auditing");
   const contentRef = useRef(null);
 
   const handleServiceChange = (key) => {
@@ -27,7 +27,7 @@ export default function ServicesPage() {
 
       <div className="flex flex-col lg:flex-row ">
         {/* ── Left: Service Content ── */}
-        <div  ref={contentRef} className="flex-1 min-w-0 rounded-2xl pt-10 mb-5 md:pb-20">
+        <div ref={contentRef} className="flex-1 min-w-0 rounded-2xl pt-10 mb-5 md:pb-20">
           <ServiceContent service={activeService} />
         </div>
 

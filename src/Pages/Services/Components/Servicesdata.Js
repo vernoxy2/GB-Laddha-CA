@@ -10,15 +10,15 @@ import Certification from "../../../assets/ServiceImg/Certification.png";
 
 
 const servicesData = {
-  "Management Consultancy": {
+  "Auditing": {
     img: Management,
-    title: "Management",
-    highlight: "Consultancy",
+    title: "Auditing",
+    highlight: "Services",
     intro:
-      "Our management consultancy services are designed to help organizations improve performance, address operational challenges, and plan sustainable growth. We work closely with management teams to analyse existing structures, identify gaps, and implement practical strategies aligned with business objectives.",
+      "Our Auditing services are designed to help organizations improve performance, address operational challenges, and plan sustainable growth. We work closely with management teams to analyse existing structures, identify gaps, and implement practical strategies aligned with business objectives.",
     detail:
       "Our integrated approach covers planning, execution, financial structuring, compliance, and process optimization—ensuring that recommendations are realistic, actionable, and measurable.",
-    listTitle: "Our Management Consultancy services include:",
+    listTitle: "Our Auditing services include:",
     items: [
       "Business Planning & Strategic Planning",
       "Accounting Outsourcing",
@@ -36,15 +36,15 @@ const servicesData = {
       "Mergers & Acquisitions"
     ],
   },
-  Taxation: {
+  "GST": {
     img: Taxation,
-    title: "Taxation",
+    title: "GST",
     highlight: "Services",
     intro:
       "With frequent changes in tax laws and increasing regulatory complexity, effective tax planning and compliance have become critical for businesses. We provide practical, well-researched tax advisory services to help clients manage obligations efficiently while optimizing tax positions.",
     detail:
       "Our team keeps clients informed about changes in taxation regimes and assists them in navigating assessments, planning, and representations before authorities.",
-    listTitle: "Our Taxation services include:",
+    listTitle: "Our GST services include:",
     items: [
       "Direct Tax Advisory & Compliance",
       "GST Advisory & Compliance",
@@ -54,15 +54,15 @@ const servicesData = {
       "Representation before various authorities up to ITAT in Direct Taxes"
     ],
   },
-  "Regulatory Services": {
+  "ROC": {
     img: Regulatory,
-    title: "Regulatory",
+    title: "ROC",
     highlight: "Services",
     intro:
       "We assist businesses in meeting regulatory requirements across multiple statutes and governing authorities. Our regulatory services focus on compliance accuracy, documentation clarity, and process efficiency.",
     detail:
       "",
-    listTitle: "Our Regulatory services include:",
+    listTitle: "Our ROC services include:",
     items: [
       "Business Licensing Services",
       "Disputes & Litigation Matters",
@@ -79,15 +79,15 @@ const servicesData = {
       "Various Company Secretarial Practices"
     ],
   },
-  "Public Finance Management (PFM)": {
+  "Project Finance": {
     img: Finance,
-    title: "Public Finance",
-    highlight: "Management (PFM)",
+    title: "Project ",
+    highlight: "Finance",
     intro:
-      "Our PFM services help institutions manage public funds responsibly while aligning financial practices with development goals.",
+      "Our Project Finance services help institutions manage public funds responsibly while aligning financial practices with development goals.",
     detail:
       "",
-    listTitle: "Our PFM services include:",
+    listTitle: "Our Project Finance services include:",
     items: [
       "Macroeconomic Stabilisation",
       "Monitoring & Evaluation",
@@ -101,15 +101,15 @@ const servicesData = {
 "Capital Restructuring and Issue-Related Advisory Services"
     ],
   },
-  "Accounting & MIS": {
+  "Subsidy": {
     img: Accounting,
-    title: "Accounting",
-    highlight: "& MIS",
+    title: "Subsidy",
+    highlight: "Services",
     intro:
       "We help organizations transition from manual systems to efficient, technology-driven accounting and MIS frameworks. Our solutions are designed to enhance control, reporting accuracy, and decision-making.",
     detail:
       "",
-    listTitle: "Our Accounting & MIS services include:",
+    listTitle: "Our Subsidy services include:",
     items: [
       "Understanding existing manual systems and designing computerized solutions",
       "Implementation of Accounting & MIS systems for",
@@ -128,15 +128,15 @@ const servicesData = {
       "Software & Service Industries",
     ],
   },
-  "Company Affairs": {
+  "Internal Audit": {
     img: Company,
-    title: "Company",
-    highlight: "Affairs",
+    title: "Internal ",
+    highlight: "Audit",
     intro:
       "We provide complete support for corporate legal and secretarial matters, ensuring statutory compliance and smooth coordination with regulatory authorities.",
     detail:
       "",
-    listTitle: "Our Company Affairs services include:",
+    listTitle: "Our Internal Audit services include:",
     items: [
       "Formation of Private & Public Limited Companies",
       "Conducting Board Meetings, EGMs & AGMs",
@@ -160,15 +160,15 @@ const servicesData = {
       "Reserve Bank of India (RBI)",
     ],
   },
-  "Audit & Assurance": {
+  "HR Audit": {
     img: Audit,
-    title: "Audit",
-    highlight: "& Assurance",
+    title: "HR ",
+    highlight: "Audit",
     intro:
-      "Our audit and assurance services provide independent, objective assessments that build stakeholder trust and identify opportunities for operational improvement.",
+      "Our HR audit services provide independent, objective assessments that build stakeholder trust and identify opportunities for operational improvement.",
     detail:
       "We conduct statutory, internal, and forensic audits with a thorough, risk-based approach — delivering insights that go beyond compliance to drive genuine business value.",
-    listTitle: "Our Audit & Assurance services include:",
+    listTitle: "Our HR Audit services include:",
     items: [
       "Compliance Audit",
       "Concurrent Audit",
@@ -183,15 +183,30 @@ const servicesData = {
       "Due Diligence Audit"
     ],
   },
-  "Certification Services": {
+  "FAR Verification": {
     img: Certification,
-    title: "Certification",
-    highlight: "Services",
+    title: "FAR",
+    highlight: "Verification",
     intro:
       "We provide certifications as required under various statutory provisions, ensuring accuracy and compliance with applicable laws.",
     detail:
       "With decades of hands-on exposure across industries, we assist businesses in managing obligations efficiently while aligning financial practices with long-term operational goals.",
-    listTitle: "Our Certification services include:",
+    listTitle: "Our FAR Verification services include:",
+    items: [
+      "Certifications under the Income Tax Act",
+      "Certifications under GST laws",
+      "Certifications under other applicable laws and regulations",
+    ],
+  },
+  "Startup advice": {
+    img: Certification,
+    title: "Startup",
+    highlight: "Advice",
+    intro:
+      "We provide certifications as required under various statutory provisions, ensuring accuracy and compliance with applicable laws.",
+    detail:
+      "With decades of hands-on exposure across industries, we assist businesses in managing obligations efficiently while aligning financial practices with long-term operational goals.",
+    listTitle: "Our Startup advice services include:",
     items: [
       "Certifications under the Income Tax Act",
       "Certifications under GST laws",
