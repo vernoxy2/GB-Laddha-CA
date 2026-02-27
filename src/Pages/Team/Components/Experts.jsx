@@ -19,11 +19,11 @@ const ExpertsList = [
     name: "Ketan Suchak",
     text: "Dedicated consultant for project subsidy advisory across Gujarat, Daman, and Silvassa. Extensive knowledge of regional industrial policies, incentive schemes, and regulatory procedures. Supports businesses in maximizing financial benefits through structured subsidy planning and compliance management.",
   },
-  {
-    id: 4,
-    name: "CS Jayant Suthar",
-    text: "Company Secretary with comprehensive expertise in ROC compliances, IEC & DGFT registrations, trademark, copyright, and patent services. Advises on new business formations, corporate restructuring, and entity conversions while ensuring full statutory compliance under applicable corporate laws.",
-  },
+  // {
+  //   id: 4,
+  //   name: "CS Jayant Suthar",
+  //   text: "Company Secretary with comprehensive expertise in ROC compliances, IEC & DGFT registrations, trademark, copyright, and patent services. Advises on new business formations, corporate restructuring, and entity conversions while ensuring full statutory compliance under applicable corporate laws.",
+  // },
   {
     id: 5,
     name: "CA Bharat Jain",
