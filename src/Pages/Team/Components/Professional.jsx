@@ -33,7 +33,7 @@ const ProfessionalTeamList = [
   {
     id: 4,
     name: "CA Khushbu Bohra",
-    qualification: "B.Com., H.C.A.",
+    qualification: "B.Com., F.C.A.",
     text: "Mrs Khushbu Bohra, Partner, was enrolled as a Member of ICAI in year 2019 and possesses strong practical expertise in Direct Taxation and Statutory Audit. She provides  comprehensive advisory and compliance support, assisting clients with tax planning, assessments, and audit requirements while ensuring adherence to regulatory standards.",
   },
   {
